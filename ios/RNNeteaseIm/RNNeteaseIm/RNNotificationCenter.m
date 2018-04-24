@@ -65,6 +65,7 @@
 
 - (void)playMessageAudioTip
 {
+    //添加消息提示音
     [self.player stop];
     [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryAmbient error:nil];
     [self.player play];
